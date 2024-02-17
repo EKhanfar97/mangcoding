@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .active {
     font-weight: 800;
 }
@@ -18,11 +25,13 @@ ul {
     list-style: none;
 }
 
-.row {
+header .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    z-index: 100000;
 }
 
 .container {
@@ -32,15 +41,15 @@ ul {
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 10000px;
 }
 
 header {
     position: fixed;
     width: 100%;
-    z-index: 9;
+    z-index: 955555555;
     box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.10);
     padding: 20px 0px;
+    background-color: #FFFFFF;
 }
 
 header .logo img {
@@ -49,7 +58,6 @@ header .logo img {
 
 header .logo {
     display: flex;
-
     align-items: center;
     gap: 10px;
 }
@@ -93,3 +101,413 @@ header nav ul a {
 .auth a {
     font-family: Inter;
 }
+
+.welcome {
+    padding: 200px 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px
+}
+
+.welcome img {
+    width: 70%;
+}
+
+.welcome h2 {
+    font-family: Poppins;
+    font-synthesis-weight: 700;
+    font-size: 50px;
+    width: 70%;
+    padding: 20px 0;
+}
+
+.welcome h2 span {
+    color: hsla(237, 76%, 62%, 1);
+}
+
+.welcome p:last-of-type {
+    color: hsla(0, 0%, 59%, 1);
+    width: 80%;
+    padding-bottom: 40px;
+}
+
+.begins {
+    color: hsla(237, 76%, 62%, 1);
+}
+
+.welcome a:first-of-type {
+    color: #fff;
+    background-color: hsla(237, 76%, 62%, 1);
+    width: fit-content;
+    padding: 10px 40px;
+    color: hsla(0, 0%, 100%, 1);
+    border-radius: 12px;
+    font-family: Inter;
+}
+
+.welcome a:last-of-type {
+    color: #101928;
+    padding-left: 40px;
+    font-weight: 700;
+}
+
+.information {
+    background-color: hsla(0, 0%, 96%, 1);
+    padding-bottom: 80px;
+}
+
+.inform {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 45px;
+
+}
+
+.give {
+    color: hsla(237, 76%, 62%, 1);
+}
+
+.intro h3 {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.info-card {
+    background-color: hsla(237, 76%, 62%, 1);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5%;
+    width: auto;
+}
+
+.info-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    align-self: auto;
+    margin: 10px;
+}
+
+.info-card h3 {
+    padding: 30px 0;
+}
+
+.taking {
+    background: repeating-linear-gradient(hsla(237, 76%, 62%, 1), hsla(237, 64%, 42%, 1));
+    padding: 40px 0;
+}
+
+.taking .row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+}
+
+.right-taking {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    gap: 10px;
+    width: 60%;
+}
+
+.right-taking .selected {
+    width: fit-content;
+}
+
+.right-taking p {
+    color: hsla(0, 0%, 87%, 1);
+    font-family: Poppins;
+}
+
+.right-taking h3 {
+    font-family: Poppins;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    font-size: 35px;
+    width: 80%;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.numbers span {
+    font-weight: 700;
+}
+
+.right-taking span {
+    color: hsla(48, 86%, 57%, 1);
+    font-family: Inter;
+}
+
+.taking img {
+    width: 70%;
+}
+
+.courses {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.course {
+    box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.courses .row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10%;
+    align-items: stretch;
+}
+
+.course-types {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-info {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.course-info span:first-of-type {
+    background-color: hsla(237, 76%, 62%, 1);
+    align-self: flex-start;
+    padding: 8px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.course-info span:last-of-type {
+    align-self: flex-end;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    size: 8.93px;
+}
+
+.courses img {
+    width: 100%;
+    aspect-ratio: 135.09/99.079;
+    display: flex;
+    filter: brightness(50%);
+}
+
+.course-details {
+    display: flex;
+    align-content: space-between;
+    font-size: 15px;
+    padding: 20px 0;
+
+}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+}
+
+.course-details .info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 250px;
+    color: hsla(0, 0%, 59%, 1);
+    font: Poppins;
+}
+
+.course-details .views {
+    color: #545BE8;
+}
+
+.course-describtion {
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    padding-bottom: 70%;
+}
+
+.course-describtion p:first-child {
+    color: hsla(237, 76%, 62%, 1);
+    font-size: 25px;
+}
+
+.course-describtion h2 {
+    font-size: 50px;
+}
+
+.course-describtion p:last-of-type {
+    color: hsla(0, 0%, 59%, 1);
+}
+
+.course-describtion a {
+    background-color: hsla(237, 76%, 62%, 1);
+    width: fit-content;
+    padding: 10px 40px;
+    color: hsla(0, 0%, 100%, 1);
+    border-radius: 12px;
+    font-family: Inter;
+}
+
+.testimonials {
+    padding-bottom: 40px;
+}
+
+.testimonials .row {
+    gap: 40px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 8.23719596862793px 8.23719596862793px 0px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    width: calc((100% - 40px)/2);
+}
+
+.testimonial .user-info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.user-info h3 {
+    font-size: 14px;
+}
+
+.user-info span {
+    font-size: 10px;
+    color: hsla(0, 0%, 59%, 1);
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial:after {
+    content: '';
+    border-top: 50px solid rgb(179, 175, 175);
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+footer {
+    background-color: #393E46;
+    padding: 50px 0px;
+    color: #FFFFFF;
+}
+
+footer a {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.left-side .right-side {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .row {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .icons {
+    display: flex;
+    gap: 15px;
+}
+
+footer .icons svg {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+footer .logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer img {
+    width: 35px;
+}
+
+footer .right-side {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+footer .left-side p {
+    padding: 20px 0;
+    width: 450px;
+}
+
+footer .footer-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+footer .footer-item nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-item nav a {
+    padding-bottom: 10px;
+}
+
